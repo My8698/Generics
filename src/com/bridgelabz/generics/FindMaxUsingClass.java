@@ -15,12 +15,12 @@ public class FindMaxUsingClass<T extends Comparable <T>> {
         this.number4 = number4;
     }
     public T maximum(){
-        return FindMaxUsingClass.maxOfValues(number1, number2, number3, number4);
+        return FindMaxUsingClass.maxOfValue(number1, number2, number3, number4);
     }
     /**
      * static method maxOfValues by passing three instance variables
      */
-    public static <T extends Comparable <T>> T maxOfValues(T number1, T number2, T number3,T number4) {
+    public static <T extends Comparable <T>> T maxOfValue(T number1, T number2, T number3,T number4) {
         T max = number1;
         if (number2.compareTo(max) > 0)
             max = number2;
